@@ -1,0 +1,34 @@
+name: Feature
+description: Propose a capability or a change in behaviour
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What is painful today? Describe the situation, not the solution.
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Including doing nothing.
+    validations:
+      required: false
+
+  - type: textarea
+    id: measure
+    attributes:
+      label: How we would know it worked
+      description: What would be measurable after this ships?
+    validations:
+      required: false
